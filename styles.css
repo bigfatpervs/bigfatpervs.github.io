@@ -173,3 +173,13 @@ a:hover {
 .footer-map-wrapper {
     align-items: flex-end;
 }
+
+/* ------------------- 3.4 Layout - transport-list ---------------------------*/
+
+.transport-list {
+    list-style: square;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 20px;
+}
