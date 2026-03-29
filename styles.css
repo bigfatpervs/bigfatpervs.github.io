@@ -145,11 +145,12 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 20em;
+    max-width: 30em;
     border: var(--primary-logo-color) solid 4px;
     padding: 1em;
     box-shadow: 1px 1px gray;
     flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 /* ------------------- 3.3 Layout - Footer ---------------------------*/
@@ -171,4 +172,14 @@ a:hover {
 
 .footer-map-wrapper {
     align-items: flex-end;
+}
+
+/* ------------------- 3.4 Layout - transport-list ---------------------------*/
+
+.transport-list {
+    list-style: square;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 20px;
 }
