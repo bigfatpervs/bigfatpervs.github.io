@@ -54,6 +54,12 @@
     padding: 2em;
 }
 
+@media screen and (max-width: 576px) {
+    .inner-container {
+        padding: 0.5em;
+    }
+}
+
 header,
 footer {
     background-color: black;
@@ -71,9 +77,22 @@ ul {
     font-size: 40px;
 }
 
+@media screen and (max-width: 576px) {
+    ul {
+        font-size: 20px;
+    }
+}
+
 .logo {
     border-radius: 45%;
     margin: 1em;
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        width: 50px;
+        height: auto;
+    }
 }
 
 /*---------------------- 2. Typography ---------------------*/
@@ -81,15 +100,32 @@ button, input {
     font-family: chewy,sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     font-family: jua, sans-serif;
     font-size: 40px;
     font-weight: 800;
 }
 
+@media screen and (max-width: 576px) {
+    h2, h3, h4, h5, h6 {
+        font-size: 20px;
+        line-height: 0.8;
+        margin: 5px;
+    }
+}
+
 h1 {
+    font-family: jua, sans-serif;
     font-size: 80px;
     line-height: 1.2;
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 40px;
+        line-height: 0.9;
+        margin: 5px;
+    }
 }
 
 p {
@@ -97,6 +133,14 @@ p {
     line-height: 1.2;
     font-family: zain,sans-serif;
     font-size: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    p {
+        font-size: 12px;
+        line-height: 0.9;
+        margin: 5px 0;
+    }
 }
 
 a:link,
@@ -108,11 +152,21 @@ a:visited{
     font-size: 50px;
 }
 
-a:hover {
+a:active{
     color: var(--secondary-logo-color);
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 576px) {
+    a:link, a:visited {font-size: 20px;}
+}
+
+@media (hover: hover){
+a:hover {
+    color: var(--secondary-logo-color);
+    text-transform: uppercase;
+}
+}
 /*---------------------- 3. Layout-Nav-bar ---------------------*/
 
 .list-navigation-bar {
@@ -122,7 +176,14 @@ a:hover {
     flex-wrap: wrap;
     flex-shrink: 2;
     padding: 0 0.5em;
-    gap: 1.5em;
+    gap: 1em;
+}
+
+@media screen and (max-width: 576px) {
+    .list-navigation-bar {
+        font-size: 20px;
+        gap: 0.5em;
+    }
 }
 
 /* ------------------- 3.1 Layout-main ---------------------------*/
@@ -130,27 +191,79 @@ a:hover {
     font-size: 30px;
 }
 
+@media screen and (max-width: 576px) {
+    .page-intro a {
+        font-size: 15px;
+    }
+}
+
 /* ------------------- 3.2 Layout - Tiles ---------------------------*/
 .navigation-tiles {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 2em;
-    gap: 0.5em;
+    padding: 1rem;
+    gap: 1.5rem;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 576px) {
+    .navigation-tiles {
+        gap: 1rem;
+    }
 }
 
 .tiles {
+    flex: 0 0 300px;
+    max-width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 30em;
+
     border: var(--primary-logo-color) solid 4px;
     padding: 1em;
     box-shadow: 1px 1px gray;
-    flex-shrink: 1;
-    flex-wrap: wrap;
+    overflow-wrap: break-word;
+}
+
+.tiles h1,
+.tiles h2,
+.tiles h3,
+.tiles p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 576px) {
+    .tiles {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}
+
+.tiles-img-wrapper {
+    max-width: 150px;
+    width: 100%;
+}
+
+.tiles-img-wrapper img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 576px) {
+    .tiles-img-wrapper {
+        max-width: 80px;
+    }
 }
 
 /* ------------------- 3.3 Layout - Footer ---------------------------*/
@@ -170,6 +283,12 @@ a:hover {
     font-size: 30px;
 }
 
+@media screen and (max-width: 576px) {
+    .socials-wrapper a {
+        font-size: 15px;
+    }
+}
+
 .footer-map-wrapper {
     align-items: flex-end;
 }
@@ -182,4 +301,34 @@ a:hover {
     flex-direction: column;
     align-items: start;
     font-size: 20px;
+}
+
+.workshop-list {
+    list-style-type: circle;
+    font-family: zain,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    list-style-position: inside;
+    padding-left: 1em;
+    margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+    .workshop-list {
+        font-size: 12px;
+        list-style: circle;
+    }
+}
+
+.workshop-list li {
+    font-size: 20px;
+    list-style-type: circle;
+}
+
+@media screen and (max-width: 576px) {
+    .workshop-list li {
+        font-size: 12px;
+    }
 }
