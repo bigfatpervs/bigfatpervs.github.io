@@ -54,7 +54,7 @@
     padding: 2em;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .inner-container {
         padding: 0.5em;
     }
@@ -77,9 +77,9 @@ ul {
     font-size: 40px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     ul {
-        font-size: 20px;
+        font-size: 1.3em;
     }
 }
 
@@ -88,9 +88,9 @@ ul {
     margin: 1em;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .logo {
-        width: 50px;
+        width: 3em;
         height: auto;
     }
 }
@@ -106,11 +106,11 @@ h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     h2, h3, h4, h5, h6 {
-        font-size: 20px;
+        font-size: 2em;
         line-height: 0.8;
-        margin: 5px;
+        margin: 0.3em;
     }
 }
 
@@ -120,11 +120,11 @@ h1 {
     line-height: 1.2;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     h1 {
-        font-size: 40px;
+        font-size: 4em;
         line-height: 0.9;
-        margin: 5px;
+        margin: 0.3em;
     }
 }
 
@@ -135,9 +135,9 @@ p {
     font-size: 20px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     p {
-        font-size: 12px;
+        font-size: 1.3em;
         line-height: 0.9;
         margin: 5px 0;
     }
@@ -157,8 +157,8 @@ a:active{
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 576px) {
-    a:link, a:visited {font-size: 20px;}
+@media screen and (max-width: 768px) {
+    a:link, a:visited {font-size: 1.3em;}
 }
 
 @media (hover: hover){
@@ -179,9 +179,9 @@ a:hover {
     gap: 1em;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .list-navigation-bar {
-        font-size: 20px;
+        font-size: 1.3em;
         gap: 0.5em;
     }
 }
@@ -191,9 +191,9 @@ a:hover {
     font-size: 30px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .page-intro a {
-        font-size: 15px;
+        font-size: 1.3em;
     }
 }
 
@@ -212,7 +212,7 @@ a:hover {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .navigation-tiles {
         gap: 1rem;
     }
@@ -242,7 +242,7 @@ a:hover {
     overflow-wrap: break-word;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .tiles {
         flex: 1 0 100%;
         max-width: 100%;
@@ -260,7 +260,7 @@ a:hover {
     display: block;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .tiles-img-wrapper {
         max-width: 80px;
     }
@@ -283,9 +283,9 @@ a:hover {
     font-size: 30px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .socials-wrapper a {
-        font-size: 15px;
+        font-size: 0.9em;
     }
 }
 
@@ -315,9 +315,9 @@ a:hover {
     margin: 0;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .workshop-list {
-        font-size: 12px;
+        font-size: 1.3em;
         list-style: circle;
     }
 }
@@ -327,8 +327,9 @@ a:hover {
     list-style-type: circle;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .workshop-list li {
-        font-size: 12px;
+        font-size: 0.9em;
+        line-height: 1em;
     }
 }
